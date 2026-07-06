@@ -14,12 +14,17 @@ Secrets required in the agent environment: `OPENAI_API_KEY`, `X_USERNAME`,
 4. For EACH file in `staging/`:
    a. Read the JSON; read its `content`.
    b. Write a summary to a temp file: 2-4 sentence overview, then a
-      `### Key Points` list of 3-7 bullets.
+      `### Key Points` list of 3-7 bullets, then a final tag line per
+      `docs/research-questions.md` (e.g. `#q12 #build #ticketmaster`;
+      no tags if nothing clearly applies — never force a match).
    c. `python -m harvest.finalize staging/<file>.json <summary-file>`
 5. `git add brain/ sources-state.json && git commit -m "harvest: $(date +%F)"`
    (skip commit if nothing changed).
 6. `git push origin main`.
 7. Report: items harvested per type, errors, note links.
+8. Mondays: before step 5, write the weekly digest; 1st of month: the monthly
+   rollup — both per `docs/research-questions.md` §Synthesis, into
+   `brain/digests/`.
 
 Adding a source later: append to `sources.yaml`, then run
 `python -m harvest.seed <type> <source_key>` so history isn't backfilled

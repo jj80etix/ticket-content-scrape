@@ -1,7 +1,13 @@
 # Subscription list for the daily harvest. Add entries; first run of a new
 # source seeds its history as "seen" and only future items are processed.
-youtube:         # channel IDs
-  - UCXuqSBlHAE6Xw-yeJA0Tunw
-articles: []     # RSS feed URLs
+# Phase plan + question mapping: docs/research-questions.md §Source feasibility
+youtube: []      # channel IDs
+articles:        # RSS feed URLs (Phase 1)
+  - https://www.theticketingbusiness.com/feed/   # Q1,Q3,Q6,Q9-Q13 trade press
+  - https://www.ticketnews.com/feed/             # Q2,Q6,Q9,Q11 US primary/resale news
+  - https://news.pollstar.com/feed/              # Q1,Q3,Q8,Q13 live-biz trade press
+  - https://www.iqmagazine.com/feed/             # Q3,Q6,Q11 intl live-biz trade press
+  - https://www.ftc.gov/feeds/press-release.xml  # Q9,Q10 regulator primary source
+  - https://www.regulatoryoversight.com/feed/    # Q9,Q11 state-AG / junk-fee legal alerts
 podcasts: []     # RSS feed URLs
-x: []            # account handles, e.g. karpathy
+x: []            # account handles — DEFERRED until X password rotation done

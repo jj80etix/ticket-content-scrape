@@ -3,6 +3,11 @@ from datetime import date
 
 import feedparser
 
+# Some feeds (e.g. ftc.gov) 403 feedparser's default UA; present a browser.
+feedparser.USER_AGENT = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                         "AppleWebKit/537.36 (KHTML, like Gecko) "
+                         "Chrome/126.0 Safari/537.36")
+
 
 def youtube_feed_url(channel_id):
     return f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"

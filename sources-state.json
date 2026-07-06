@@ -18,6 +18,91 @@
         "yt:video:mgy8CfNmMwY",
         "yt:video:zvaO4DPM1ZM"
       ]
+    },
+    "https://news.pollstar.com/feed/": {
+      "seen": [
+        "https://news.pollstar.com/?p=1221727",
+        "https://news.pollstar.com/?p=1221702",
+        "https://news.pollstar.com/?p=1221717",
+        "https://news.pollstar.com/?p=1221701",
+        "https://news.pollstar.com/?p=1221706",
+        "https://news.pollstar.com/?p=1221694",
+        "https://news.pollstar.com/?p=1221689",
+        "https://news.pollstar.com/?p=1221684",
+        "https://news.pollstar.com/?p=1221680",
+        "https://news.pollstar.com/?p=1221676"
+      ]
+    },
+    "https://www.ftc.gov/feeds/press-release.xml": {
+      "seen": [
+        "334081",
+        "333935",
+        "333753",
+        "333933",
+        "333896",
+        "333701",
+        "333804",
+        "333541",
+        "333496",
+        "333393"
+      ]
+    },
+    "https://www.iqmagazine.com/feed/": {
+      "seen": [
+        "https://www.iqmagazine.com/?p=472015",
+        "https://www.iqmagazine.com/?p=472016",
+        "https://www.iqmagazine.com/?p=472009",
+        "https://www.iqmagazine.com/?p=471955",
+        "https://www.iqmagazine.com/?p=471973",
+        "https://www.iqmagazine.com/?p=471960",
+        "https://www.iqmagazine.com/?p=471850",
+        "https://www.iqmagazine.com/?p=471869",
+        "https://www.iqmagazine.com/?p=471867",
+        "https://www.iqmagazine.com/?p=471855"
+      ]
+    },
+    "https://www.regulatoryoversight.com/feed/": {
+      "seen": [
+        "https://www.regulatoryoversight.com/?p=23082",
+        "https://www.regulatoryoversight.com/?p=23080",
+        "https://www.regulatoryoversight.com/?p=23078",
+        "https://www.regulatoryoversight.com/?p=23075",
+        "https://www.regulatoryoversight.com/?p=23072",
+        "https://www.regulatoryoversight.com/?p=23069",
+        "https://www.regulatoryoversight.com/?p=23064",
+        "https://www.regulatoryoversight.com/?p=23060",
+        "https://www.regulatoryoversight.com/?p=23058",
+        "https://www.regulatoryoversight.com/?p=23055"
+      ]
+    },
+    "https://www.theticketingbusiness.com/feed/": {
+      "seen": [
+        "https://www.theticketingbusiness.com/?p=99125",
+        "https://www.theticketingbusiness.com/?p=99128",
+        "https://www.theticketingbusiness.com/?p=99120",
+        "https://www.theticketingbusiness.com/?p=99127",
+        "https://www.theticketingbusiness.com/?p=99124",
+        "https://www.theticketingbusiness.com/?p=99130",
+        "https://www.theticketingbusiness.com/?p=99107",
+        "https://www.theticketingbusiness.com/?p=99116",
+        "https://www.theticketingbusiness.com/?p=99113",
+        "https://www.theticketingbusiness.com/?p=99112",
+        "https://www.theticketingbusiness.com/?p=99110"
+      ]
+    },
+    "https://www.ticketnews.com/feed/": {
+      "seen": [
+        "https://www.ticketnews.com/?p=119641",
+        "https://www.ticketnews.com/?p=119624",
+        "https://www.ticketnews.com/?p=119611",
+        "https://www.ticketnews.com/?p=119607",
+        "https://www.ticketnews.com/?p=119603",
+        "https://www.ticketnews.com/?p=119596",
+        "https://www.ticketnews.com/?p=119510",
+        "https://www.ticketnews.com/?p=119562",
+        "https://www.ticketnews.com/?p=119523",
+        "https://www.ticketnews.com/?p=119509"
+      ]
     }
   }
 }
