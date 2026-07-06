@@ -52,7 +52,8 @@ Content lives under `brain/` at repo root (mirrors the existing etix `brain/` va
 ticket-content-scrape/
 ├── sources.yaml
 ├── sources-state.json
-└── brain/
+└── brain/                     # Obsidian vault root
+    ├── docs/specs/            # design specs (this doc)
     ├── youtube/YYYY-MM-DD-slug.md
     ├── articles/YYYY-MM-DD-slug.md
     ├── podcasts/YYYY-MM-DD-slug.md
