@@ -1,6 +1,7 @@
 # Subscription list for the daily harvest. Add entries; first run of a new
 # source seeds its history as "seen" and only future items are processed.
-youtube: []      # channel IDs, e.g. UCXuqSBlHAE6Xw-yeJA0Tunw
+youtube:         # channel IDs
+  - UCXuqSBlHAE6Xw-yeJA0Tunw
 articles: []     # RSS feed URLs
 podcasts: []     # RSS feed URLs
 x: []            # account handles, e.g. karpathy
