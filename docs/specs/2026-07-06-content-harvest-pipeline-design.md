@@ -26,6 +26,8 @@ Cloud-scheduled agent (via `/schedule`), runs once daily. Not dependent on local
   - `x`: account handles / list URLs
 - `sources-state.json` (repo root) — dedup state: seen item IDs/URLs per source, so re-runs only process new items.
 
+**First-run seeding:** when a source appears in `sources.yaml` for the first time, its current feed items are seeded into `sources-state.json` as "seen" WITHOUT processing (optionally processing the N most recent, default 0). Prevents backfill floods — e.g. transcribing a podcast's entire archive on day one.
+
 ### Per-source-type fetch & processing
 
 | Type | Fetch | Extract | Cost |
@@ -33,9 +35,14 @@ Cloud-scheduled agent (via `/schedule`), runs once daily. Not dependent on local
 | YouTube | channel RSS feed → new video IDs | yt-dlp captions (reuse existing youtube-transcript skill logic) | free |
 | Article | RSS feed → new entries | defuddle skill → clean markdown | free |
 | Podcast | RSS enclosure → new episodes | download audio → OpenAI Whisper API transcription | ~$0.006/min |
-| X | claude-in-chrome browser automation → account/list timeline | scrape recent posts/threads | free (browser-based) |
+| X | headless browser (Playwright) login → account/list timeline | scrape recent posts/threads | free (browser-based) |
 
 Each new item gets: full transcript/text stored, plus a generated summary + key-points section on top.
+
+Notes per type:
+- **X:** login uses a dedicated scrape account; credentials supplied via the scheduled agent's secret/env config — never committed to this repo or the spec. Automated logins from cloud IPs may trigger X challenges/lockouts; treat X failures as expected transients (retry next run). If lockouts become chronic, fall back to a local run for X only or the paid X API.
+- **Podcast:** OpenAI Whisper API has a 25MB/request limit — episodes above it are chunked (e.g. ffmpeg segment) and transcripts concatenated.
+- **YouTube:** yt-dlp from datacenter IPs is intermittently bot-blocked; expected transient, covered by retry-next-run.
 
 ### Storage layout
 
@@ -53,7 +60,7 @@ ticket-content-scrape/
     └── YYYY-MM-DD.md          # daily index note, links to that day's items
 ```
 
-Each per-item note has frontmatter: `source`, `url`, `type`, `date`, `tags`.
+Each per-item note has frontmatter: `title`, `author` (channel/show/handle/byline), `source`, `url`, `type`, `date`, `tags` — title+author make the daily index readable.
 
 ### Error handling
 
@@ -62,7 +69,7 @@ Each per-item note has frontmatter: `source`, `url`, `type`, `date`, `tags`.
 
 ### Persistence
 
-The daily job commits new notes/state and pushes to `origin/main` each run — fully hands-off, vault stays backed up daily.
+The cloud job clones the repo from GitHub (push credentials via the scheduled agent's GitHub access), pulls latest `main` before processing (picks up local edits, avoids conflicts), then commits new notes/state and pushes to `origin/main` each run — fully hands-off, vault stays backed up daily. The local path `/Users/jjchambers/Intellimark/ticket-content-scrape` is the user's working clone, not the job's runtime.
 
 ## Out of scope (for this iteration)
 
