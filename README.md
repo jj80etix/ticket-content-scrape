@@ -9,7 +9,7 @@ vault at `brain/`.
 
 Usage:
 - `sources.yaml` — subscriptions. After adding a source, seed it:
-  `python -m harvest.seed <type> <source_key>`
+  `python -m harvest.seed <type> <source_key>` (x handles need no seeding)
 - `sources-state.json` — dedup memory (committed).
 - `python -m harvest.run` — stage new items to `staging/`.
 - `python -m harvest.finalize <staged.json> <summary.md>` — write final note.

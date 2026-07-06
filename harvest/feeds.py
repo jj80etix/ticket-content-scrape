@@ -10,6 +10,8 @@ def youtube_feed_url(channel_id):
 
 def parse_feed(url_or_xml):
     parsed = feedparser.parse(url_or_xml)
+    if parsed.bozo and not parsed.entries:
+        raise RuntimeError(f"feed error: {parsed.bozo_exception}")
     feed_title = parsed.feed.get("title", "")
     items = []
     for e in parsed.entries:

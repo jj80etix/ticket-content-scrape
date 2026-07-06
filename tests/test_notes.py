@@ -1,3 +1,5 @@
+import hashlib
+
 from harvest.notes import slugify, render_note, write_note
 
 ITEM = {
@@ -31,3 +33,23 @@ def test_write_note_path_and_daily_index(tmp_path):
     # second write must not duplicate the index line
     write_note(ITEM, "Summary.", tmp_path)
     assert (tmp_path / "2026-07-06.md").read_text().count("big-news-ai-tickets") == 1
+
+
+def test_write_note_empty_slug_falls_back_to_id_hash(tmp_path):
+    """A fully non-ASCII title slugifies to '' — without a fallback, every
+    such note on a given day collapses onto the same YYYY-MM-DD-.md file,
+    silently overwriting prior notes."""
+    item1 = {**ITEM, "id": "note-one", "title": "日本語のタイトル"}
+    item2 = {**ITEM, "id": "note-two", "title": "日本語のタイトル"}
+
+    p1 = write_note(item1, "Summary.", tmp_path)
+    p2 = write_note(item2, "Summary.", tmp_path)
+
+    assert p1.name != "2026-07-06-.md"
+    assert p2.name != "2026-07-06-.md"
+    assert p1 != p2
+
+    h1 = hashlib.sha1(item1["id"].encode()).hexdigest()[:12]
+    h2 = hashlib.sha1(item2["id"].encode()).hexdigest()[:12]
+    assert p1.name == f"2026-07-06-{h1}.md"
+    assert p2.name == f"2026-07-06-{h2}.md"

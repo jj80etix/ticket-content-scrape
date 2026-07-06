@@ -22,4 +22,5 @@ Secrets required in the agent environment: `OPENAI_API_KEY`, `X_USERNAME`,
 7. Report: items harvested per type, errors, note links.
 
 Adding a source later: append to `sources.yaml`, then run
-`python -m harvest.seed <type> <source_key>` so history isn't backfilled.
+`python -m harvest.seed <type> <source_key>` so history isn't backfilled
+(x handles need no seeding — the first run seeds itself).

@@ -22,7 +22,7 @@ def youtube_captions(video_url, workdir):
         ["yt-dlp", "--skip-download", "--write-auto-subs", "--write-subs",
          "--sub-langs", "en.*", "--sub-format", "vtt",
          "-o", f"{workdir}/%(id)s", video_url],
-        check=True, capture_output=True, text=True)
+        check=True, capture_output=True, text=True, timeout=600)
     vtts = sorted(Path(workdir).glob("*.vtt"))
     if not vtts:
         raise RuntimeError(f"no captions for {video_url}")
@@ -39,6 +39,9 @@ def needs_chunking(size_bytes):
     return size_bytes > WHISPER_CHUNK_BYTES
 
 
+# TODO before adding podcast sources: derive -segment_time from size/duration
+# (fixed 1200s can exceed 25MB at >=192kbps) and handle non-mp3 enclosures
+# (-c copy assumes mp3).
 def podcast_transcript(enclosure_url, workdir):
     from openai import OpenAI  # deferred so tests don't need the key
     audio = Path(workdir) / "episode.mp3"

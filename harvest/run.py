@@ -1,5 +1,6 @@
 import hashlib
 import json
+import socket
 import sys
 import tempfile
 from pathlib import Path
@@ -13,6 +14,19 @@ TYPE_KEYS = {"youtube": "youtube", "articles": "article",
              "podcasts": "podcast", "x": "x"}
 
 
+def _err(prefix, e):
+    """Build an error string, appending a stderr tail when the exception
+    carries one (e.g. subprocess.CalledProcessError) so failures are
+    diagnosable from the run log alone."""
+    err = f"{prefix}: {e}"
+    tail = getattr(e, "stderr", "") or ""
+    if isinstance(tail, bytes):
+        tail = tail.decode(errors="replace")
+    if tail:
+        err += f" | stderr: {tail[-300:]}"
+    return err
+
+
 def harvest_all(config, state, staging_dir, fetchers):
     staging_dir = Path(staging_dir)
     staging_dir.mkdir(parents=True, exist_ok=True)
@@ -22,7 +36,7 @@ def harvest_all(config, state, staging_dir, fetchers):
         if fetcher is None:
             continue
         lister, extractor = fetcher
-        for source_key in config.get(cfg_key, []):
+        for source_key in config.get(cfg_key) or []:
             try:
                 metas = lister(source_key)
                 fresh = set(state_mod.new_items(
@@ -30,12 +44,15 @@ def harvest_all(config, state, staging_dir, fetchers):
                 for meta in metas:
                     if meta["id"] not in fresh:
                         continue
-                    item = extractor(source_key, meta)
-                    h = hashlib.sha1(item["id"].encode()).hexdigest()[:12]
-                    (staging_dir / f"{type_key}-{h}.json").write_text(
-                        json.dumps(item, indent=2))
+                    try:
+                        item = extractor(source_key, meta)
+                        h = hashlib.sha1(item["id"].encode()).hexdigest()[:12]
+                        (staging_dir / f"{type_key}-{h}.json").write_text(
+                            json.dumps(item, indent=2))
+                    except Exception as e:  # isolate per-item failures
+                        errors.append(_err(f"{source_key}/{meta['id']}", e))
             except Exception as e:  # isolate per-source failures
-                errors.append(f"{source_key}: {e}")
+                errors.append(_err(source_key, e))
     return errors
 
 
@@ -80,6 +97,7 @@ def _x_extractor(handle, meta):
 
 
 def main():
+    socket.setdefaulttimeout(60)
     config = yaml.safe_load((ROOT / "sources.yaml").read_text()) or {}
     state = state_mod.load_state(ROOT / "sources-state.json")
     errors = harvest_all(config, state, ROOT / "staging", {

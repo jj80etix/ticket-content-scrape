@@ -1,3 +1,4 @@
+import hashlib
 import re
 from pathlib import Path
 
@@ -32,7 +33,8 @@ def render_note(item, summary_md):
 def write_note(item, summary_md, vault_dir):
     folder = Path(vault_dir) / FOLDERS[item["type"]]
     folder.mkdir(parents=True, exist_ok=True)
-    stem = f"{item['published']}-{slugify(item['title'])}"
+    slug = slugify(item["title"]) or hashlib.sha1(item["id"].encode()).hexdigest()[:12]
+    stem = f"{item['published']}-{slug}"
     path = folder / f"{stem}.md"
     path.write_text(render_note(item, summary_md))
     index = Path(vault_dir) / f"{item['published']}.md"
