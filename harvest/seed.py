@@ -16,9 +16,17 @@ def main():
         print("x needs no seeding — first run seeds itself")
         return
     if type_key == "youtube":
-        ids = [i["id"] for i in feeds.parse_feed(feeds.youtube_feed_url(source_key))]
-    else:  # article, podcast
-        ids = [i["id"] for i in feeds.parse_feed(source_key)]
+        fetch = lambda: [i["id"] for i in feeds.parse_feed(feeds.youtube_feed_url(source_key))]
+    elif type_key in ("article", "podcast"):
+        fetch = lambda: [i["id"] for i in feeds.parse_feed(source_key)]
+    else:
+        print(f"ERROR: unknown type {type_key!r} (expected youtube|article|podcast|x)", file=sys.stderr)
+        sys.exit(1)
+    try:
+        ids = fetch()
+    except Exception as e:
+        print(f"ERROR: could not fetch feed for {source_key}: {e}", file=sys.stderr)
+        sys.exit(1)
     if not ids and not allow_empty:
         print(f"ERROR: refusing to seed {source_key!r} with 0 ids "
               "(feed unreachable or genuinely empty?) — pass --allow-empty "
