@@ -5,7 +5,7 @@ source: "https://www.iqmagazine.com/feed/"
 url: "https://www.iqmagazine.com/2026/07/gotobeat-launches-arena-touring-division/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q12, q14, build, gotobeat]
 ---
 
 # Gotobeat launches arena touring division

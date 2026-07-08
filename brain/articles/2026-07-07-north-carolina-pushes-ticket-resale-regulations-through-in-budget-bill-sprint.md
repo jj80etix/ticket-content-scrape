@@ -5,7 +5,7 @@ source: "https://www.ticketnews.com/feed/"
 url: "https://www.ticketnews.com/2026/07/north-carolina-pushes-ticket-resale-regulations-through-in-budget-bill-sprint/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q9, q11, monitor, improve, live-nation, ticketmaster]
 ---
 
 # North Carolina Pushes Ticket Resale Regulations Through in Budget Bill Sprint

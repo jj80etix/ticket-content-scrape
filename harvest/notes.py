@@ -11,9 +11,24 @@ def slugify(title):
     return s[:80]
 
 
+TAG_LINE = re.compile(r"^(#[a-z0-9][a-z0-9-]*)(\s+#[a-z0-9][a-z0-9-]*)*$")
+
+
+def extract_tags(summary_md):
+    for line in reversed(summary_md.strip().splitlines()):
+        line = line.strip()
+        if not line:
+            continue
+        if TAG_LINE.match(line):
+            return [t.lstrip("#") for t in line.split()]
+        return []
+    return []
+
+
 def render_note(item, summary_md):
     def q(v):
         return '"' + str(v).replace('"', "'") + '"'
+    tags_yaml = "[" + ", ".join(extract_tags(summary_md)) + "]"
     return (
         "---\n"
         f"title: {q(item['title'])}\n"
@@ -22,7 +37,7 @@ def render_note(item, summary_md):
         f"url: {q(item['url'])}\n"
         f"type: {item['type']}\n"
         f"date: {item['published']}\n"
-        "tags: []\n"
+        f"tags: {tags_yaml}\n"
         "---\n\n"
         f"# {item['title']}\n\n"
         f"## Summary\n\n{summary_md}\n\n"

@@ -5,7 +5,7 @@ source: "https://www.theticketingbusiness.com/feed/"
 url: "https://www.theticketingbusiness.com/2026/07/cricket-west-indies-appoints-intix-as-exclusive-ticketing-partner/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q12, build, improve, intix]
 ---
 
 # Cricket West Indies appoints Intix as exclusive ticketing partner

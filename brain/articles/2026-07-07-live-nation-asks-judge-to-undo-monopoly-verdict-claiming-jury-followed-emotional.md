@@ -5,7 +5,7 @@ source: "https://www.ticketnews.com/feed/"
 url: "https://www.ticketnews.com/2026/07/live-nation-asks-judge-to-undo-monopoly-verdict-claiming-jury-followed-emotional-arguments-over-law/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q10, monitor, evolve, live-nation, ticketmaster, doj-v-livenation]
 ---
 
 # Live Nation Asks Judge to Undo Monopoly Verdict, Claiming Jury Followed “Emotional Arguments” Over Law

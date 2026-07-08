@@ -14,15 +14,26 @@ Secrets required in the agent environment: `OPENAI_API_KEY`, `X_USERNAME`,
 4. For EACH file in `staging/`:
    a. Read the JSON; read its `content`.
    b. Write a summary to a temp file: 2-4 sentence overview, then a
-      `### Key Points` list of 3-7 bullets, then a final tag line per
-      `docs/research-questions.md` (e.g. `#q12 #build #ticketmaster`;
-      no tags if nothing clearly applies — never force a match).
+      `### Key Points` list of 3-7 bullets. If the item matches one or more
+      research questions, add the three enrichment sections per
+      `docs/research-questions.md` §Per-item enrichment: `### Highlights`,
+      `### Industry Problem`, `### Proposed Solution`. End with a final tag
+      line (e.g. `#q12 #build #ticketmaster`; no tags — and no enrichment
+      sections — if nothing clearly applies; never force a match). The tag
+      line must stay the last line of the file.
    c. `python -m harvest.finalize staging/<file>.json <summary-file>`
-5. `git add brain/ sources-state.json && git commit -m "harvest: $(date +%F)"`
+5. Rewrite the daily note `brain/YYYY-MM-DD.md` as a daily summary report
+   per `docs/research-questions.md` §Synthesis (Daily): Highlights first
+   (regulatory/legal Q5, Q9–Q11 — one-line why + any effective dates), then
+   items grouped by question with a one-line takeaway each, then untagged
+   items as bare links under "Other". Keep the `[[wikilinks]]` written in
+   step 4c.
+6. `git add brain/ sources-state.json && git commit -m "harvest: $(date +%F)"`
    (skip commit if nothing changed).
-6. `git push origin main`.
-7. Report: items harvested per type, errors, note links.
-8. Mondays: before step 5, write the weekly digest; 1st of month: the monthly
+7. `git push origin main`.
+8. Report: paste the daily summary report, then items harvested per type and
+   errors.
+9. Mondays: before step 6, write the weekly digest; 1st of month: the monthly
    rollup — both per `docs/research-questions.md` §Synthesis, into
    `brain/digests/`.
 

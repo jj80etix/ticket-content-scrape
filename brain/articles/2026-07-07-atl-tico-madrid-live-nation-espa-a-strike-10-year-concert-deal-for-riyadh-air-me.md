@@ -5,7 +5,7 @@ source: "https://www.ticketnews.com/feed/"
 url: "https://www.ticketnews.com/2026/07/atletico-madrid-live-nation-espana-strike-10-year-concert-deal-for-riyadh-air-metropolitano/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q12, q13, monitor, evolve, live-nation]
 ---
 
 # Atlético Madrid, Live Nation España Strike 10-Year Concert Deal for Riyadh Air Metropolitano

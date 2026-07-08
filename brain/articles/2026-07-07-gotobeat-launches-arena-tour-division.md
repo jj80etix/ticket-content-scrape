@@ -5,7 +5,7 @@ source: "https://www.theticketingbusiness.com/feed/"
 url: "https://www.theticketingbusiness.com/2026/07/gotobeat-launches-arena-tour-division/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q12, q14, build, gotobeat]
 ---
 
 # Gotobeat launches arena tour division

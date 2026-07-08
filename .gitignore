@@ -4,3 +4,5 @@ staging/
 .pytest_cache/
 .venv/
 .env
+brain/.obsidian/
+.serena/

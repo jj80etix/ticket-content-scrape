@@ -5,7 +5,7 @@ source: "https://news.pollstar.com/feed/"
 url: "https://news.pollstar.com/2026/07/07/non-concert-formats-are-one-of-the-most-exciting-developments-in-live-qs-with-semmel-concerts-christoph-scholz-finn-regenhold/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q8, evolve, build]
 ---
 
 # ‘Non-concert Formats Are One Of The Most Exciting Developments In Live’: Q’s With Semmel Concerts’ Christoph Scholz & Finn Regenhold

@@ -5,7 +5,7 @@ source: "https://www.theticketingbusiness.com/feed/"
 url: "https://www.theticketingbusiness.com/2026/07/ticketing-start-up-forumm-benefits-from-funding-to-power-growth-plans/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q12, q13, build, monitor, forumm]
 ---
 
 # Ticketing start-up Forumm benefits from funding to power growth plans

@@ -1,6 +1,6 @@
 import hashlib
 
-from harvest.notes import slugify, render_note, write_note
+from harvest.notes import extract_tags, slugify, render_note, write_note
 
 ITEM = {
     "id": "abc123", "type": "article", "title": "Big News: AI & Tickets!",
@@ -22,6 +22,21 @@ def test_render_note_frontmatter_and_sections():
         assert line in md
     assert "## Summary" in md and "## Transcript" in md
     assert "Full article text here." in md
+
+
+def test_extract_tags():
+    assert extract_tags("Summary.\n\n- point\n\n#q12 #build #ticketmaster") == [
+        "q12", "build", "ticketmaster"]
+    assert extract_tags("Summary with no tag line.\n\n- point") == []
+    # hashtags mid-text don't count — only a trailing tags-only line
+    assert extract_tags("Talks about #q12 in prose.\n\n- point") == []
+    assert extract_tags("") == []
+
+
+def test_render_note_mirrors_tags_into_frontmatter():
+    md = render_note(ITEM, "Summary.\n\n- point\n\n#q8 #evolve #build")
+    assert "tags: [q8, evolve, build]" in md
+    assert "#q8 #evolve #build" in md  # inline tag line preserved
 
 
 def test_write_note_path_and_daily_index(tmp_path):

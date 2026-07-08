@@ -5,7 +5,7 @@ source: "https://www.theticketingbusiness.com/feed/"
 url: "https://www.theticketingbusiness.com/2026/07/german-basketball-club-ratiopharm-ulm-nets-vivenu-partnership/"
 type: article
 date: 2026-07-07
-tags: []
+tags: [q12, q14, build, improve, vivenu]
 ---
 
 # German basketball club Ratiopharm Ulm nets Vivenu partnership

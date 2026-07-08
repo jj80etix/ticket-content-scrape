@@ -46,8 +46,35 @@ At summarize time (RUNBOOK step 4b), end each summary with one tag line:
 `#ai-context` applies beyond Q14: client/patron pain-point content (Q1, Q2)
 and win/loss reasoning (Q20) are prime grounding material — tag them.
 
+## Per-item enrichment
+
+When an item matches at least one question (i.e. it gets `#qN` tags), the
+summary also carries three sections, each written *through the lens of the
+matched questions*:
+
+- `### Highlights` — 2-4 bullets: facts in this item that most directly
+  inform the matched questions (numbers, dates, named parties, deadlines).
+- `### Industry Problem` — 1-3 sentences: the underlying client/patron/
+  industry pain point or structural issue this item evidences. Anchor to the
+  question's framing (e.g. Q2 → patron pain, Q9 → compliance burden).
+- `### Proposed Solution` — 1-3 sentences: the solution the item itself
+  describes, if any, plus what an independent primary platform (Etix) could
+  build or improve in response. Align with the matched questions' decision
+  tags: `#build`/`#improve` → concrete product response; `#monitor`/`#evolve`
+  → what to watch and the trigger that would change posture.
+
+Unmatched items get none of these sections — summary + key points only.
+
 ## Synthesis
 
+- **Daily (every run):** the daily note `brain/YYYY-MM-DD.md` is a summary
+  report, not a bare link list. Format:
+  1. `## Highlights` — regulatory/legal items (Q5, Q9–Q11) first, one line
+     each: what changed, why it matters, effective dates/deadlines. Empty if
+     none — omit the section, don't pad.
+  2. `## By question` — one `### Qn — <short title>` block per question with
+     matched items; each item is a `[[wikilink]]` + one-line takeaway.
+  3. `## Other` — untagged items, bare `[[wikilinks]]`.
 - **Weekly (Mondays):** digest of the week's `#monitor`-tagged notes, grouped
   by question, written to `brain/digests/YYYY-Www.md`. Flag anything
   regulatory/legal (Q9–Q11, Q5) that looks time-sensitive at the top.
