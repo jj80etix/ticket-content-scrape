@@ -22,7 +22,7 @@ def finalize(staged_path, summary_md, vault_dir, state_path):
 def main():
     staged, summary_file = sys.argv[1], sys.argv[2]
     note = finalize(staged, Path(summary_file).read_text().strip(),
-                    ROOT / "brain", ROOT / "sources-state.json")
+                    ROOT / "brain" / "ticket-content-scrape", ROOT / "sources-state.json")
     print(note)
 
 

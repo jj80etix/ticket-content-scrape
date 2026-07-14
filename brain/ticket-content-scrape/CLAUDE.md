@@ -1,4 +1,4 @@
-# brain/ — generated Obsidian vault
+# brain/ticket-content-scrape/ — generated Obsidian vault
 
 Everything under this directory is pipeline output written by `harvest/finalize.py` and the daily cloud agent (see `../RUNBOOK.md`). Treat it as data, not source.
 

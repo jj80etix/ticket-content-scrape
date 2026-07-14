@@ -1,6 +1,6 @@
 # ticket-content-scrape
 
-Daily content harvest (articles / YouTube / podcasts / X) into an Obsidian vault at `brain/`. A cloud-scheduled Claude agent runs the pipeline daily at 10:00 UTC following `RUNBOOK.md`; a local launchd job pulls the resulting commits at 7 AM ET.
+Daily content harvest (articles / YouTube / podcasts / X) into an Obsidian vault at `brain/ticket-content-scrape/`. A cloud-scheduled Claude agent runs the pipeline daily at 10:00 UTC following `RUNBOOK.md`; a local launchd job pulls the resulting commits at 7 AM ET.
 
 ## Commands
 
@@ -23,7 +23,7 @@ python -m harvest.seed <type> <source_key>      # seed a NEW source (see gotcha 
 - `docs/research-questions.md` — editorial layer: the research questions used to tag/enrich harvested items, plus §Per-item enrichment and §Synthesis specs. Read it before changing summary/tagging behavior.
 - `RUNBOOK.md` — the cloud agent's step-by-step daily procedure. Changing pipeline behavior usually means updating RUNBOOK.md too.
 
-Pipeline flow: `run.py` → `staging/*.json` → (agent writes summary per RUNBOOK step 4) → `finalize.py` → `brain/` note + state update.
+Pipeline flow: `run.py` → `staging/*.json` → (agent writes summary per RUNBOOK step 4) → `finalize.py` → `brain/ticket-content-scrape/` note + state update.
 
 ## Gotchas
 

@@ -22,7 +22,7 @@ Secrets required in the agent environment: `OPENAI_API_KEY`, `X_USERNAME`,
       sections — if nothing clearly applies; never force a match). The tag
       line must stay the last line of the file.
    c. `python -m harvest.finalize staging/<file>.json <summary-file>`
-5. Rewrite the daily note `brain/YYYY-MM-DD.md` as a daily summary report
+5. Rewrite the daily note `brain/ticket-content-scrape/YYYY-MM-DD.md` as a daily summary report
    per `docs/research-questions.md` §Synthesis (Daily): Highlights first
    (regulatory/legal Q5, Q9–Q11 — one-line why + any effective dates), then
    items grouped by question with a one-line takeaway each, then untagged
@@ -35,7 +35,7 @@ Secrets required in the agent environment: `OPENAI_API_KEY`, `X_USERNAME`,
    errors.
 9. Mondays: before step 6, write the weekly digest; 1st of month: the monthly
    rollup — both per `docs/research-questions.md` §Synthesis, into
-   `brain/digests/`.
+   `brain/ticket-content-scrape/digests/`.
 
 Adding a source later: append to `sources.yaml`, then run
 `python -m harvest.seed <type> <source_key>` so history isn't backfilled

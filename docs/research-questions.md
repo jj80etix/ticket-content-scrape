@@ -67,7 +67,7 @@ Unmatched items get none of these sections — summary + key points only.
 
 ## Synthesis
 
-- **Daily (every run):** the daily note `brain/YYYY-MM-DD.md` is a summary
+- **Daily (every run):** the daily note `brain/ticket-content-scrape/YYYY-MM-DD.md` is a summary
   report, not a bare link list. Format:
   1. `## Highlights` — regulatory/legal items (Q5, Q9–Q11) first, one line
      each: what changed, why it matters, effective dates/deadlines. Empty if
@@ -76,10 +76,10 @@ Unmatched items get none of these sections — summary + key points only.
      matched items; each item is a `[[wikilink]]` + one-line takeaway.
   3. `## Other` — untagged items, bare `[[wikilinks]]`.
 - **Weekly (Mondays):** digest of the week's `#monitor`-tagged notes, grouped
-  by question, written to `brain/digests/YYYY-Www.md`. Flag anything
+  by question, written to `brain/ticket-content-scrape/digests/YYYY-Www.md`. Flag anything
   regulatory/legal (Q9–Q11, Q5) that looks time-sensitive at the top.
 - **Monthly (1st):** strategic rollup of `#build` / `#improve` / `#evolve`
-  notes → `brain/digests/YYYY-MM.md`. This is where Q8, Q19, Q20 actually get
+  notes → `brain/ticket-content-scrape/digests/YYYY-MM.md`. This is where Q8, Q19, Q20 actually get
   answered — by cross-referencing a month of accumulated evidence, not by any
   single item.
 - Digests cite notes as `[[wikilinks]]`; no new facts, only rollup.
