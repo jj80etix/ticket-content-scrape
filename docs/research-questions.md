@@ -107,8 +107,13 @@ and answered only via synthesis or manual feed-in.
 - Tier 1 competitor blogs/newsrooms with feeds (Q12, Q14)
 - Stripe/Adyen/payments trade press RSS (Q15)
 
+**X handles — SUBSCRIBED 2026-07-27** (curated from @etixengineering Following
+list + Q12 competitor set; live in `sources.yaml`):
+- Competitors: Ticketmaster, SeatGeek, eventbrite, dice_fm, Tixr, StubHub (Q6, Q12)
+- Trade press: TicketNews, IQ_Mag (Q2, Q3, Q6, Q9, Q11)
+- Crypto (Q4/Q5 blockchain-ticketing + CLARITY watch): CoinDesk, MessariCrypto, DefiantNews, RektHQ
+
 **Deferred — blocked, do not start:**
-- X handles (competitor + reporter accounts) — pending X password rotation
 - Needs-new-fetcher: G2/Capterra, Trustpilot, app-store reviews,
   Crunchbase/PitchBook, earnings-call transcripts, court trackers beyond
   CourtListener, internal CRM/win-loss data.

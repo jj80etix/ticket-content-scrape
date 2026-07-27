@@ -33,7 +33,7 @@ Pipeline flow: `run.py` → `staging/*.json` → (agent writes summary per RUNBO
 - **Run errors are expected transients** (X challenges, yt-dlp bot blocks, dead feeds). Report them; don't retry within a run.
 - **`npx defuddle-cli` is deprecated** (merged into `defuddle`) but still works; if it disappears, switch `harvest/extract.py` to the `defuddle` package.
 - **Commit timing:** the cloud agent runs at 10:00 UTC. Local pipeline changes must be pushed before then to take effect same-day.
-- X harvesting is deferred (`sources.yaml` `x: []`) pending password rotation.
+- X harvesting live since 2026-07-27 (12 curated handles in `sources.yaml`). One shared Playwright login per run (`x_scrape.close_session` in `run.py::main`); login failures surface as per-handle run errors — check `X_USERNAME`/`X_PASSWORD` secrets first.
 
 ## Environment (cloud agent)
 

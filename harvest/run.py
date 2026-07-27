@@ -100,12 +100,17 @@ def main():
     socket.setdefaulttimeout(60)
     config = yaml.safe_load((ROOT / "sources.yaml").read_text()) or {}
     state = state_mod.load_state(ROOT / "sources-state.json")
-    errors = harvest_all(config, state, ROOT / "staging", {
-        "youtube": (_youtube_lister, _youtube_extractor),
-        "article": (_article_lister, _article_extractor),
-        "podcast": (_podcast_lister, _podcast_extractor),
-        "x": (_x_lister, _x_extractor),
-    })
+    try:
+        errors = harvest_all(config, state, ROOT / "staging", {
+            "youtube": (_youtube_lister, _youtube_extractor),
+            "article": (_article_lister, _article_extractor),
+            "podcast": (_podcast_lister, _podcast_extractor),
+            "x": (_x_lister, _x_extractor),
+        })
+    finally:
+        if config.get("x"):
+            from harvest.x_scrape import close_session
+            close_session()
     state_mod.save_state(state, ROOT / "sources-state.json")
     for e in errors:
         print(f"ERROR {e}", file=sys.stderr)

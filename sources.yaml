@@ -10,4 +10,16 @@ articles:        # RSS feed URLs (Phase 1)
   - https://www.ftc.gov/feeds/press-release.xml  # Q9,Q10 regulator primary source
   - https://www.regulatoryoversight.com/feed/    # Q9,Q11 state-AG / junk-fee legal alerts
 podcasts: []     # RSS feed URLs
-x: []            # account handles — DEFERRED until X password rotation done
+x:               # account handles (self-seed on first run); curated 2026-07-27
+  - Ticketmaster   # Q12 Tier 2 consumer major
+  - SeatGeek       # Q12 Tier 2 consumer major
+  - eventbrite     # Q12 Tier 1 primary platform
+  - dice_fm        # Q12 Tier 1 primary platform
+  - Tixr           # Q12 Tier 1 primary platform
+  - StubHub        # Q6/Q12 Tier 3 resale
+  - TicketNews     # Q2,Q6,Q9,Q11 trade press
+  - IQ_Mag         # Q3,Q6,Q11 intl live-biz trade press
+  - CoinDesk       # Q4,Q5 crypto news/policy
+  - MessariCrypto  # Q4,Q5 crypto market intelligence
+  - DefiantNews    # Q4 DeFi coverage
+  - RektHQ         # Q4,Q7 crypto security/fraud

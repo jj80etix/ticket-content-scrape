@@ -3,6 +3,8 @@ from datetime import date
 
 from playwright.sync_api import sync_playwright
 
+_session = None
+
 
 def _login(page):
     page.goto("https://x.com/i/flow/login")
@@ -11,6 +13,44 @@ def _login(page):
     page.fill('input[name="password"]', os.environ["X_PASSWORD"])
     page.keyboard.press("Enter")
     page.wait_for_url("**/home", timeout=30000)
+
+
+class _Session:
+    """One logged-in browser shared across every handle in a run; repeated
+    logins per handle trip X's bot detection."""
+
+    def __init__(self):
+        self._pw = sync_playwright().start()
+        try:
+            self._browser = self._pw.chromium.launch(headless=True)
+            self.page = self._browser.new_page()
+            _login(self.page)
+        except Exception:
+            self.close()
+            raise
+
+    def close(self):
+        try:
+            if getattr(self, "_browser", None):
+                self._browser.close()
+        finally:
+            self._pw.stop()
+
+
+def _get_session():
+    global _session
+    if _session is None:
+        _session = _Session()
+    return _session
+
+
+def close_session():
+    global _session
+    if _session is not None:
+        try:
+            _session.close()
+        finally:
+            _session = None
 
 
 def _scrape_one(page, handle, max_posts):
@@ -33,12 +73,8 @@ def _scrape_one(page, handle, max_posts):
 
 
 def scrape_accounts(handles, max_posts=20):
+    page = _get_session().page
     out = []
-    with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
-        page = browser.new_page()
-        _login(page)
-        for h in handles:
-            out.extend(_scrape_one(page, h, max_posts))
-        browser.close()
+    for h in handles:
+        out.extend(_scrape_one(page, h, max_posts))
     return out
