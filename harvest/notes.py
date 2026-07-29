@@ -51,6 +51,11 @@ def write_note(item, summary_md, vault_dir):
     slug = slugify(item["title"]) or hashlib.sha1(item["id"].encode()).hexdigest()[:12]
     stem = f"{item['published']}-{slug}"
     path = folder / f"{stem}.md"
+    if path.exists() and f'url: "{item["url"]}"' not in path.read_text():
+        # Same day + same slugified title but a genuinely different item
+        # (distinct url) — disambiguate instead of silently overwriting.
+        stem = f"{stem}-{hashlib.sha1(item['id'].encode()).hexdigest()[:6]}"
+        path = folder / f"{stem}.md"
     path.write_text(render_note(item, summary_md))
     index = Path(vault_dir) / f"{item['published']}.md"
     line = f"- [[{FOLDERS[item['type']]}/{stem}|{item['title']}]]\n"
