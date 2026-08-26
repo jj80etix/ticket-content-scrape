@@ -356,7 +356,16 @@
         "https://news.pollstar.com/?p=1224568",
         "https://news.pollstar.com/?p=1224548",
         "https://news.pollstar.com/?p=1224554",
-        "https://news.pollstar.com/?p=1224563"
+        "https://news.pollstar.com/?p=1224563",
+        "https://news.staging.pollstar.com/?p=781518",
+        "https://news.pollstar.com/?p=1224620",
+        "https://news.pollstar.com/?p=1224631",
+        "https://news.pollstar.com/?p=1224628",
+        "https://news.pollstar.com/?p=1224645",
+        "https://news.pollstar.com/?p=1224668",
+        "https://news.pollstar.com/?p=1224635",
+        "https://news.pollstar.com/?p=1224649",
+        "https://news.pollstar.com/?p=1224644"
       ]
     },
     "https://www.ftc.gov/feeds/press-release.xml": {
@@ -392,7 +401,8 @@
         "335743",
         "335726",
         "335856",
-        "335907"
+        "335907",
+        "335930"
       ]
     },
     "https://www.iqmagazine.com/feed/": {
@@ -622,7 +632,8 @@
         "https://www.regulatoryoversight.com/?p=24011",
         "https://www.regulatoryoversight.com/?p=24051",
         "https://www.regulatoryoversight.com/?p=24053",
-        "https://www.regulatoryoversight.com/?p=24057"
+        "https://www.regulatoryoversight.com/?p=24057",
+        "https://www.regulatoryoversight.com/?p=24055"
       ]
     },
     "https://www.theticketingbusiness.com/feed/": {
@@ -1140,7 +1151,13 @@
         "https://www.ticketnews.com/?p=122055",
         "https://www.ticketnews.com/?p=121998",
         "https://www.ticketnews.com/?p=122049",
-        "https://www.ticketnews.com/?p=122041"
+        "https://www.ticketnews.com/?p=122041",
+        "https://www.ticketnews.com/?p=122087",
+        "https://www.ticketnews.com/?p=122098",
+        "https://www.ticketnews.com/?p=122105",
+        "https://www.ticketnews.com/?p=122084",
+        "https://www.ticketnews.com/?p=122080",
+        "https://www.ticketnews.com/?p=122095"
       ]
     }
   }
