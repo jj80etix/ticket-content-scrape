@@ -2,5 +2,7 @@ feedparser>=6.0
 PyYAML>=6.0
 requests>=2.31
 openai>=1.30
-playwright>=1.44
+playwright==1.56.0  # pinned: matches the cloud agent's pre-installed chromium (rev 1194); newer pip
+                    # releases (e.g. 1.62.0) expect a browser revision the container doesn't have and
+                    # fail with "Executable doesn't exist at .../chromium_headless_shell-1234/..."
 pytest>=8.0

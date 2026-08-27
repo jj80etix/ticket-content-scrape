@@ -34,6 +34,7 @@ Pipeline flow: `run.py` → `staging/*.json` → (agent writes summary per RUNBO
 - **`npx defuddle-cli` is deprecated** (merged into `defuddle`) but still works; if it disappears, switch `harvest/extract.py` to the `defuddle` package.
 - **Commit timing:** the cloud agent runs at 10:00 UTC. Local pipeline changes must be pushed before then to take effect same-day.
 - X harvesting live since 2026-07-27 (12 curated handles in `sources.yaml`). One shared Playwright login per run (`x_scrape.close_session` in `run.py::main`); login failures surface as per-handle run errors — check `X_USERNAME`/`X_PASSWORD` secrets first.
+- **`playwright` is pinned in `requirements.txt`** to match the cloud agent's pre-installed chromium build (currently rev 1194 / playwright 1.56.0). `pip install -r requirements.txt` pulling a newer unpinned playwright fails with `Executable doesn't exist at .../chromium_headless_shell-<rev>/...` because the pip package's bundled browser revision no longer matches what's on disk. If this recurs, find the playwright version whose `driver/package/browsers.json` chromium revision matches the pre-installed one (check `/opt/pw-browsers/`) and re-pin.
 
 ## Environment (cloud agent)
 
