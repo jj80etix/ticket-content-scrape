@@ -1,0 +1,80 @@
+---
+title: "FCC Draft Order Would Narrow TCPA Consent Revocation Rules for Automated Calls and Texts"
+author: "Troutman Pepper Locke State Attorneys General Team"
+source: "https://www.regulatoryoversight.com/feed/"
+url: "https://www.regulatoryoversight.com/2026/09/fcc-draft-order-would-narrow-tcpa-consent-revocation-rules-for-automated-calls-and-texts/"
+type: article
+date: 2026-09-30
+tags: []
+---
+
+# FCC Draft Order Would Narrow TCPA Consent Revocation Rules for Automated Calls and Texts
+
+## Summary
+
+The FCC circulated a draft "TCPA Modernization" order (vote scheduled Sept. 30) that would let callers treat consent revocations for informational automated calls/texts as limited to that message category rather than blanket revocation, while marketing-related revocations would still apply broadly. It also lets callers designate an exclusive revocation method and expands the fraud-alert exemption for financial institutions. Changes would take effect 30 days after Federal Register publication, ahead of the existing Jan. 31, 2027 compliance waiver date.
+
+### Key Points
+- Draft order narrows revocation scope for informational (non-marketing) automated calls/texts.
+- Callers could designate one official revocation method if clearly disclosed.
+- Fraud-alert exemption expanded to numbers from reliable third-party sources, not just customer-supplied numbers.
+- A companion Further Notice seeks comment on shortening the revocation-processing window from 10 to 7 business days.
+- Pure telecom/TCPA compliance story; no ticketing-industry nexus.
+
+## Transcript
+
+[Skip to content](#lxb_af-loop)
+
+On September 9, 2026, the Federal Communications Commission (FCC) circulated a draft order that would narrow how consumer revocations of consent apply under the Telephone Consumer Protection Act (TCPA). If adopted, callers could treat certain opt-out requests as limited to the category of automated calls or texts at issue, rather than as revocation of all prior consent. The draft order, listed as “TCPA Modernization,” is scheduled for a vote at the FCC’s September 30 open meeting.
+
+### The FCC’s Draft Order and Reconsideration of the Revocation Rule
+
+The FCC’s 2024 TCPA Consent Order allowed consumers to revoke consent through any reasonable means and treated a revocation as broadly applicable to future automated communications from the same caller. Industry and consumer groups raised concerns that this approach could unintentionally block informational messages consumers may still want, including fraud alerts, authentication codes, appointment reminders, and outage notices.
+
+### Key Changes
+
+The draft order would make several notable changes:
+
+- **Category-limited revocation****.** For informational automated calls and texts, callers could treat a revocation as limited to the specific category of message at issue. Revocations related to marketing calls or texts would still apply to all future marketing from that caller.
+- **Exclusive revocation method.** Callers could designate one or more approved methods as the exclusive way to revoke consent, provided they clearly and conspicuously disclose that method on the call or in the text.
+- **Expanded fraud alert exemption****.** Financial institutions could place certain fraud and identity-theft calls to wireless numbers obtained from reliable sources, not only numbers supplied directly by the customer.
+- **Plain-language review****.** The Consumer and Governmental Affairs Bureau would be authorized to review § 64.1200 for clarity, without making substantive changes.
+
+The amendments would take effect 30 days after publication in the Federal Register, which could accelerate compliance planning for callers that were working toward the current January 31, 2027, waiver date.
+
+The accompanying Further Notice seeks comment on additional issues, including whether to shorten the revocation-processing deadline from ten business days to seven, require callers to accept revocations by reply text, and require a one-step method to revoke consent to all automated calls and texts.
+
+### Why It Matters
+
+The draft order contemplates a potential shift away from a broad revoke-all approach and toward a more tailored framework for informational automated calls and texts. Businesses that rely on these communications should monitor the FCC’s vote and evaluate whether their consent-management processes can distinguish between the various messages and process revocations by category.
+
+---
+
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/501/userphoto/2935-1551989487.thumbnail.jpg) | **Ashley Taylor** – Co-leader and Firm Vice Chair   Ashley is co-leader of the firm’s nationally ranked State Attorneys General practice, vice chair of the firm, and a partner in its Regulatory Investigations, Strategy + Enforcement (RISE) Practice Group. He helps his clients navigate the complexities involved with multistate attorneys general investigations and enforcement actions, federal agency actions, and accompanying litigation. |
+| --- | --- |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/835/userphoto/11285-1670270394.jpg) | **Clay Friedman** – Co-leader   Clay co-leads the firm’s State Attorneys General practice and is nationally ranked by *Chambers USA* for AG Government Relations and in *Best Lawyers* for Advertising Law. He has dedicated his entire career to state attorney general and federal work, serving for nearly a decade in a senior role and more than 25+ years in private practice. Clay focuses his practice on helping industry-leading companies mitigate the risks associated with state and federal regulatory investigations and associated litigation. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/9878-1745954974.jpg) | **Chris Carlson   **Chris advises clients on regulatory, civil, and criminal investigations and litigation. With a background as an assistant attorney general, he provides practical guidance to clients with matters involving state attorneys general and federal regulatory agencies. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/13390-1764945213.jpg) | **Lauren Fincher   **Lauren has vast experience handling state attorneys general investigations, navigating complex regulatory compliance matters, and providing strategic counsel in enforcement actions across various industries. She helps clients manage high-stakes regulatory matters and guides them through complex legal landscapes. |
+| ![](https://lexblogplatform.com/wp-content/uploads/userphoto/5188-1783975383.jpg) | **Stephen Piepgrass   **Stephen leads the firm’s Regulatory Investigations, Strategy + Enforcement (RISE) Practice Group, representing clients in single and multistate enforcement actions, including inquiries and investigations involving state attorneys general and other state and federal governmental enforcement bodies including the CFPB and FTC. He regularly represents clients in highly regulated sectors such as financial services, emerging technologies, health care, insurance, and education. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/11286-1751994857.jpg) | **Michael Yaghi   **Mike handles high-profile investigations led by state attorneys general, the FTC, and other federal and state regulatory bodies. He assists clients through these complex government inquiries, assisting them throughout the entire life cycle of investigations, from regulatory enforcement through formal litigation. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/14251-1765897717.jpg) | **Matthew J. Berns   **Drawing on his experience in senior leadership roles in the New Jersey Attorney General’s and Governor’s Offices and as a trial attorney for the U.S. Department of Justice, Matt provides an insider’s perspective when guiding clients through complex government investigations, litigation, and other actions. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/835/userphoto/13010-1722527677.thumbnail.jpg) | **Jeff Johnson   **Jeff helps clients navigate complex regulatory and litigation challenges with local, state, and federal authorities. His clients benefit from his decade of broad litigation experience, understanding of emerging state and federal regulatory issues, and strong relationships with attorneys general across the U.S. In addition to handling cases from trial through state or federal appeals, Jeff serves as amicus counsel in advancing legal rules to support his clients’ vital interests. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/13406-1736289692.thumbnail.jpg) | **Jay Myers   **Jay assists clients in heavily regulated industries, including health care, energy, insurance, emerging industries, and data privacy. He provides both regulatory legal advice and government relations strategies. Jay’s past and current clients include *Fortune* 10 companies, startups, nonprofits, industry associations, and advocacy groups. Recognizing that state government matters are often complex and multifaceted, he utilizes regulatory guidance, government advocacy, or both in tandem to deliver tailored solutions for each client’s unique needs. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/14058-1773780221.jpg) | **Zoe Schloss   **Zoe represents clients in litigation and government investigations. As former deputy attorney general for the Delaware Department of Justice, she is an experienced litigator who understands the enforcement priorities that impact her clients. Zoe works with individuals and corporate entities in highly regulated industries, including financial services, health care, and energy. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/835/userphoto/13275-1731004236.jpg) | **Jessica Birdsong   **Jessica is an associate in the firm’s Regulatory Investigations, Strategy + Enforcement Practice Group. She received her J.D. from the University of Richmond School of Law, *magna cum laude*, where she served as associate articles editor of the *Journal of Law & Technology*. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/13627-1742916078.jpg) | **Sydney Goldberg   **Sydney is an associate in the firm’s Regulatory Investigations, Strategy + Enforcement (RISE) Practice Group. She advises clients on regulatory compliance and state attorney general (AG) investigations in highly regulated industries, including health care and life sciences. She routinely helps clients navigate alcohol compliance and licensing issues, helping proactively manage regulatory risk. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/13523-1739396805.jpg) | **Troy Homesley   **Troy is an accomplished litigator who has represented and defended clients across a wide range of complex, high-stakes disputes at both the trial and appellate levels. He has represented technology companies, business executives, law firms, investment funds, high-ranking federal officials, international non-profits, and asylum seekers. Troy draws on his broad litigation experience to advise clients before litigation arises, while claims are pending or threatened, and leading up to and through trial and appeals. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/835/userphoto/10270-1633967139.thumbnail.jpg) | **Namrata Kang   **Namrata (Nam) is an associate in the firm’s Regulatory Investigations, Strategy + Enforcement (RISE) Practice Group, based in the Washington, D.C. office. She routinely advises clients on a wide variety of state and federal regulatory matters, with a particular emphasis on state consumer protection laws relating to consumer financial services and marketing and advertising. Nam’s experience transcends multiple industries, including financial services, telecommunications, media, and sports betting. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/835/userphoto/12144-1688153138.jpg) | **Michael Lafleur   **Michael is an associate in the firm’s Regulatory Investigations, Strategy, and Enforcement Practice Group. Based out of the firm’s Boston office, Mike has deep experience in litigation, investigations, and other regulatory matters involving state-level regulators and state attorneys general. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/14477-1773413108.jpg) | **William LaRosa   **Bill represents clients in complex regulatory investigations, state attorneys general matters, and enforcement proceedings. He draws on his experience as a former assistant U.S. attorney and as a private-sector litigator advising corporations in high-stakes litigation and regulatory investigations, including multistate AG investigations. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/880/userphoto/12891-1717433376.jpg) | **Lane Page   **Lane represents financial institutions and other clients in federal and state regulatory investigations and complex civil litigation. He is particularly focused on consumer protection and fair lending issues. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/501/userphoto/8010-1576160253.jpg) | **Dascher Pasco   **Dascher provides strategic counsel and representation to clients navigating regulatory compliance, enforcement, and high-stakes litigation. She regularly represents clients in both single and multistate state attorney general (AG) investigations and enforcement actions, as well as before other state enforcement bodies and local government agencies. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/13460-1737582009.thumbnail.jpg) | **Kyara Rivera Rivera   **Kyara is an associate in the firm’s Regulatory Investigations, Strategy + Enforcement Practice Group. She received her J.D. from the University of Richmond School of Law, cum laude, where she served as publications and online editor of the *Public Interest Law Review.* |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/925/userphoto/13917-1753455951.jpg) | **Timothy Shyu   **Timothy advises clients on regulatory compliance and enforcement in highly regulated industries, including health care and life sciences, data privacy and cybersecurity, and emerging technology. He assists companies in navigating complex investigations and enforcement actions, helping them mitigate regulatory risk proactively. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/835/userphoto/11567-1673471849.jpg) | **Trey Smith   **Trey focuses his practice on representing and advising regulated utilities before state public utility commissions. He routinely helps clients obtain certificates of public convenience and necessity for transmission infrastructure. In this role, Trey works with his clients’ subject-matter experts to manage administrative proceedings, including by preparing initial filings; responding to discovery requests; drafting rebuttal testimony; and litigating any disputed issues. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/501/userphoto/7657-1566232499.jpg) | **Daniel Waltz   **Dan helps clients navigate all aspects highly regulated relationships between industry participants and federal, state and local governments. Whether engaging with regulators, negotiating transactions or representing clients in the courtroom, he delivers solutions that help his clients achieve their strategic goals. |
+| ![](https://lexblogplatform.com/wp-content/uploads/sites/835/userphoto/11333-1672957398.jpg) | **Stephanie Kozol   **Stephanie is Troutman Pepper Locke’s senior government relations manager in the state attorneys general department. |
+
+In addition to cookies that are necessary for website operation, this website uses cookies and other tracking tools for various purposes, including to provide enhanced functionality and measure website performance. To learn more about our information practices, please visit our [Global Privacy Notice](/global-privacy-notice).
+
+[Agree](#) [Decline](#)
