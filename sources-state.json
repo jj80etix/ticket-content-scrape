@@ -629,7 +629,16 @@
         "https://news.pollstar.com/?p=1227407",
         "https://news.pollstar.com/?p=1227448",
         "https://news.pollstar.com/?p=1227426",
-        "https://news.pollstar.com/?p=1227439"
+        "https://news.pollstar.com/?p=1227439",
+        "https://news.pollstar.com/?p=1227520",
+        "https://news.pollstar.com/?p=1227466",
+        "https://news.pollstar.com/?p=1227483",
+        "https://news.pollstar.com/?p=1227499",
+        "https://news.pollstar.com/?p=1227473",
+        "https://news.pollstar.com/?p=1227467",
+        "https://news.pollstar.com/?p=1227489",
+        "https://news.pollstar.com/?p=1227149",
+        "https://news.pollstar.com/?p=1227358"
       ]
     },
     "https://www.ftc.gov/feeds/press-release.xml": {
@@ -686,7 +695,9 @@
         "337195",
         "337235",
         "337449",
-        "337447"
+        "337447",
+        "337515",
+        "337518"
       ]
     },
     "https://www.iqmagazine.com/feed/": {
@@ -1013,7 +1024,14 @@
         "https://www.iqmagazine.com/?p=477011",
         "https://www.iqmagazine.com/?p=477104",
         "https://www.iqmagazine.com/?p=477113",
-        "https://www.iqmagazine.com/?p=477107"
+        "https://www.iqmagazine.com/?p=477107",
+        "https://www.iqmagazine.com/?p=477189",
+        "https://www.iqmagazine.com/?p=477173",
+        "https://www.iqmagazine.com/?p=477196",
+        "https://www.iqmagazine.com/?p=477195",
+        "https://www.iqmagazine.com/?p=477158",
+        "https://www.iqmagazine.com/?p=477141",
+        "https://www.iqmagazine.com/?p=477159"
       ]
     },
     "https://www.regulatoryoversight.com/feed/": {
@@ -1075,7 +1093,8 @@
         "https://www.regulatoryoversight.com/?p=24107",
         "https://www.regulatoryoversight.com/?p=24112",
         "https://www.regulatoryoversight.com/?p=24103",
-        "https://www.regulatoryoversight.com/?p=24116"
+        "https://www.regulatoryoversight.com/?p=24116",
+        "https://www.regulatoryoversight.com/?p=24118"
       ]
     },
     "https://www.theticketingbusiness.com/feed/": {
@@ -1863,7 +1882,17 @@
         "https://www.ticketnews.com/?p=123902",
         "https://www.ticketnews.com/?p=123918",
         "https://www.ticketnews.com/?p=123905",
-        "https://www.ticketnews.com/?p=123915"
+        "https://www.ticketnews.com/?p=123915",
+        "https://www.ticketnews.com/?p=123970",
+        "https://www.ticketnews.com/?p=123977",
+        "https://www.ticketnews.com/?p=124013",
+        "https://www.ticketnews.com/?p=123966",
+        "https://www.ticketnews.com/?p=124007",
+        "https://www.ticketnews.com/?p=124010",
+        "https://www.ticketnews.com/?p=123964",
+        "https://www.ticketnews.com/?p=124018",
+        "https://www.ticketnews.com/?p=123974",
+        "https://www.ticketnews.com/?p=123980"
       ]
     }
   }
